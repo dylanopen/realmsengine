@@ -46,6 +46,7 @@ public class Panel extends javax.swing.JPanel implements Runnable {
         while (thread != null) {
             long frameStartTime = System.nanoTime();
             update();
+            hasDrawn = false;
             repaint();
             while (!hasDrawn) {
                 try {
