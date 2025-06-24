@@ -25,6 +25,10 @@ public class Window {
         frame.setLocationRelativeTo(null);
     }
 
+    public Window(int width, int height) {
+        this("Realms Engine", width, height);
+    }
+
     public void start(GameLoop gameLoop) {
         panel.start(gameLoop);
     }
