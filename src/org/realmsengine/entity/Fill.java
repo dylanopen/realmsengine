@@ -1,0 +1,33 @@
+package org.realmsengine.entity;
+
+import org.realmsengine.component.Color;
+import org.realmsengine.component.Drawable;
+import org.realmsengine.type.RgbaColor;
+
+import java.awt.Graphics2D;
+
+public class Fill implements Drawable, Color {
+    public RgbaColor color;
+
+    public Fill(RgbaColor color) {
+        this.color = color;
+    }
+
+    @Override
+    public RgbaColor getRgbaColor() {
+        return color;
+    }
+
+    @Override
+    public void setColor(RgbaColor color) {
+        this.color = color;
+    }
+
+    @Override
+    public void draw(Graphics2D g) {
+        int width = g.getClipBounds().width;
+        int height = g.getClipBounds().height;
+        g.setColor(color.awt());
+        g.fillRect(0, 0, width, height);
+    }
+}
