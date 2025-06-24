@@ -6,10 +6,10 @@ import org.realmsengine.type.RgbaColor;
 
 import java.awt.Graphics2D;
 
-public class Fill implements DrawComponent, ColorComponent {
+public class FillEntity implements DrawComponent, ColorComponent {
     public RgbaColor color;
 
-    public Fill(RgbaColor color) {
+    public FillEntity(RgbaColor color) {
         this.color = color;
     }
 
