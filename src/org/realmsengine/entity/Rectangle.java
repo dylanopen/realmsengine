@@ -4,11 +4,11 @@ import org.realmsengine.component.ColorComponent;
 import org.realmsengine.type.RgbaColor;
 import org.realmsengine.component.DrawComponent;
 import org.realmsengine.component.PositionComponent;
-import org.realmsengine.component.Size;
+import org.realmsengine.component.SizeComponent;
 
 import java.awt.Graphics2D;
 
-public class Rectangle implements DrawComponent, PositionComponent, Size, ColorComponent {
+public class Rectangle implements DrawComponent, PositionComponent, SizeComponent, ColorComponent {
     private double x, y;
     private double width, height;
     private RgbaColor color;

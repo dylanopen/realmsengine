@@ -1,6 +1,6 @@
 package org.realmsengine.component;
 
-public interface Size {
+public interface SizeComponent {
     double getWidth();
     double getHeight();
     void setWidth(double width);
