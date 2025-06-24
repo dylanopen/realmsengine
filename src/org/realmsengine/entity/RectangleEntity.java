@@ -1,7 +1,7 @@
 package org.realmsengine.entity;
 
 import org.realmsengine.component.ColorComponent;
-import org.realmsengine.type.RgbaColor;
+import org.realmsengine.type.Color;
 import org.realmsengine.component.DrawComponent;
 import org.realmsengine.component.PositionComponent;
 import org.realmsengine.component.SizeComponent;
@@ -11,9 +11,9 @@ import java.awt.Graphics2D;
 public class RectangleEntity implements DrawComponent, PositionComponent, SizeComponent, ColorComponent {
     private double x, y;
     private double width, height;
-    private RgbaColor color;
+    private Color color;
 
-    public RectangleEntity(double x, double y, double width, double height, RgbaColor color) {
+    public RectangleEntity(double x, double y, double width, double height, Color color) {
         this.x = x;
         this.y = y;
         this.width = width;
@@ -80,12 +80,12 @@ public class RectangleEntity implements DrawComponent, PositionComponent, SizeCo
     }
 
     @Override
-    public RgbaColor getRgbaColor() {
+    public Color getRgbaColor() {
         return color;
     }
 
     @Override
-    public void setColor(RgbaColor color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 }

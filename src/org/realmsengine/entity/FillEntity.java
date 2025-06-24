@@ -2,24 +2,24 @@ package org.realmsengine.entity;
 
 import org.realmsengine.component.ColorComponent;
 import org.realmsengine.component.DrawComponent;
-import org.realmsengine.type.RgbaColor;
+import org.realmsengine.type.Color;
 
 import java.awt.Graphics2D;
 
 public class FillEntity implements DrawComponent, ColorComponent {
-    public RgbaColor color;
+    public Color color;
 
-    public FillEntity(RgbaColor color) {
+    public FillEntity(Color color) {
         this.color = color;
     }
 
     @Override
-    public RgbaColor getRgbaColor() {
+    public Color getRgbaColor() {
         return color;
     }
 
     @Override
-    public void setColor(RgbaColor color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

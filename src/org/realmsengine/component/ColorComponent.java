@@ -1,8 +1,8 @@
 package org.realmsengine.component;
 
-import org.realmsengine.type.RgbaColor;
+import org.realmsengine.type.Color;
 
 public interface ColorComponent {
-    RgbaColor getRgbaColor();
-    void setColor(RgbaColor color);
+    Color getRgbaColor();
+    void setColor(Color color);
 }
