@@ -8,12 +8,12 @@ import org.realmsengine.component.SizeComponent;
 
 import java.awt.Graphics2D;
 
-public class Rectangle implements DrawComponent, PositionComponent, SizeComponent, ColorComponent {
+public class RectangleEntity implements DrawComponent, PositionComponent, SizeComponent, ColorComponent {
     private double x, y;
     private double width, height;
     private RgbaColor color;
 
-    public Rectangle(double x, double y, double width, double height, RgbaColor color) {
+    public RectangleEntity(double x, double y, double width, double height, RgbaColor color) {
         this.x = x;
         this.y = y;
         this.width = width;
