@@ -2,13 +2,13 @@ package org.realmsengine.entity;
 
 import org.realmsengine.component.Color;
 import org.realmsengine.type.RgbaColor;
-import org.realmsengine.component.Drawable;
+import org.realmsengine.component.DrawComponent;
 import org.realmsengine.component.Position;
 import org.realmsengine.component.Size;
 
 import java.awt.Graphics2D;
 
-public class Rectangle implements Drawable, Position, Size, Color {
+public class Rectangle implements DrawComponent, Position, Size, Color {
     private double x, y;
     private double width, height;
     private RgbaColor color;
