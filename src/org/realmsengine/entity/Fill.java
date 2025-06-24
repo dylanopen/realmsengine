@@ -27,7 +27,6 @@ public class Fill implements Drawable, Color {
     public void draw(Graphics2D g) {
         int width = g.getClipBounds().width;
         int height = g.getClipBounds().height;
-        g.setColor(color.awt());
-        g.fillRect(0, 0, width, height);
+        new Rectangle(0, 0, width, height, color).draw(g);
     }
 }
