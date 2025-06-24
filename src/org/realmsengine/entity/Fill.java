@@ -1,12 +1,12 @@
 package org.realmsengine.entity;
 
-import org.realmsengine.component.Color;
+import org.realmsengine.component.ColorComponent;
 import org.realmsengine.component.DrawComponent;
 import org.realmsengine.type.RgbaColor;
 
 import java.awt.Graphics2D;
 
-public class Fill implements DrawComponent, Color {
+public class Fill implements DrawComponent, ColorComponent {
     public RgbaColor color;
 
     public Fill(RgbaColor color) {
