@@ -5,5 +5,8 @@ public interface SizeComponent {
     double getHeight();
     void setWidth(double width);
     void setHeight(double height);
-    void setSize(double width, double height);
+    default void setSize(double width, double height) {
+        setWidth(width);
+        setHeight(height);
+    }
 }
