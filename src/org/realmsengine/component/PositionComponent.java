@@ -5,5 +5,8 @@ public interface PositionComponent {
     double getY();
     void setX(double x);
     void setY(double y);
-    void setPosition(double x, double y);
+    default void setPosition(double x, double y) {
+        setX(x);
+        setY(y);
+    }
 }
